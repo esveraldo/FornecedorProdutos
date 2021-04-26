@@ -1,5 +1,6 @@
 ﻿using Dev.Business.Core.Models;
 using Dev.Business.Models.Enums;
+using Dev.Business.Models.Fornecedores.Validations;
 using Dev.Business.Models.Produtos;
 using System;
 using System.Collections.Generic;
@@ -19,5 +20,13 @@ namespace Dev.Business.Models.Fornecedores
 
         /* EF Relations */
         public ICollection<Produto> Produtos { get; set; }
+
+        /*public bool Validacao()
+        {
+            var validacao = new FornecedorValidation();
+            var resultado = validacao.Validate(this);
+
+            return resultado.IsValid;
+        }*/
     }
 }
